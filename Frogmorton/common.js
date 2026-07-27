@@ -1836,6 +1836,9 @@ function run(context, doc, setID, lang, icons, getCardObjects, saveResult, progr
 				else if ((cardType == TREACHERY) && (cardName == 'Zagubiony w mie\u015bcie goblin\u00f3w')) { // workaround for the Polish card
 					s.set('Name-region', '55,100,26,180');
 				}
+				else if ((cardType == TREACHERY) && (cardName == 'Jeden, by Wszystkimi Rz\u0105dzi\u0107')) { // workaround for the Polish card
+					s.set('Name-region', '55,101,26,173');
+				}
 				else {
 					if (cardType + cardSphere in nameRegion) {
 						s.set('Name-region', nameRegion[cardType + cardSphere]);
