@@ -55,8 +55,8 @@ SESSIONID_REGEX = (
     r'<form method="post" action="\.\/dn_playingcards_front_dynamic\.aspx\?'
     r'[^"]*?ssid=([^&"]+)')
 NEXT_REGEX = (
-    r'<a href="javascript:__doPostBack\(&#39;([^&]+)&#39;,'
-    r'&#39;([^&]+)&#39;\)" style="[^"]+">Next<\/a>')
+    r'<a href="javascript:__doPostBack\(\'([^\']+)\','
+    r'\'([^\']+)\'\)" style="[^"]+">Next<\/a>')
 PREVIEW_REGEX = r'(?<=javascript:oTempSave\.show\()[^\)]+'
 IMAGE_REGEX = r'(?<=<img src=")[^"]+'
 EDIT_REGEX = (
