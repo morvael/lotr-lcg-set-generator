@@ -15,6 +15,7 @@ import re
 import shutil
 import sys
 import time
+import unicodedata
 import uuid
 import xml.etree.ElementTree as ET
 
@@ -3921,7 +3922,8 @@ Targets removed.
         assistants = [
             u.replace('(he/him)', '').replace('(she/her)', '').strip()
             for u in assistants]
-        assistants = sorted(list(set(assistants)), key=str.casefold)
+        assistants = sorted(list(set(assistants)),
+            key=lambda s: unicodedata.normalize("NFD", s).casefold())
         assistants = ', '.join(assistants)
         return assistants
 
