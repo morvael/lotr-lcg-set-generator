@@ -844,12 +844,12 @@ DESCRIPTIVE_LAST_TRAITS = {
     'Boar', 'Boar Clan', 'Captain', 'Flame', 'Lieutenant', 'Olog-hai',
     'Raven', 'Raven Clan', 'Uruk-hai', 'Wolf', 'Wolf Clan', 'Wolf-cult'}
 DESCRIPTIVE_TRAITS = {
-    'Adventure', 'Advice', 'Archer', 'Assault', 'Attack', 'Besieger',
+    'Adventure', 'Advice', 'Archer', 'Assault', 'Attack', 'Besieger', 'Black',
     'Black Speech', 'Boating', 'Brigand', 'Burglar', 'Capture', 'Captured',
     'Champion', 'Clue', 'Corruption', 'Craftsman', 'Cultist', 'Damaged',
     'Defense', 'Despair', 'Disaster', 'Distracting', 'Doom', 'Drowning',
     'Enchantment', 'Escape', 'Fear', 'Fellowship', 'Food', 'Found', 'Game',
-    'Gossip', 'Guardian', 'Hazard', 'Healer', 'Hungry', 'Inferno',
+    'Gossip', 'Grey', 'Guardian', 'Hazard', 'Healer', 'Hungry', 'Inferno',
     'Information', 'Instrument', 'Key', 'Light', 'Master', 'Mathom',
     'Minstrel', 'Mission', 'Mustering', 'Nervous', 'Night', 'Panic',
     'Panicked', 'Party', 'Pillager', 'Pipe', 'Pipeweed', 'Plight', 'Plot',
@@ -857,8 +857,8 @@ DESCRIPTIVE_TRAITS = {
     'Ring-bearer', 'Ruffian', 'Sack', 'Sauron', 'Scheme', 'Scout', 'Scroll',
     'Search', 'Servant', 'Service', 'Shadow', 'Sharkey', 'Shirriff',
     'Sorcerer', 'Sorcery', 'Spy', 'Staff', 'Stalking', 'Steward', 'Summoned',
-    'Summoner', 'Tantrum', 'Thaurdir', 'Thug', 'Time', 'Tools', 'Traitor',
-    'Treasure', 'Villain', 'Warden', 'Warrior', 'Weather', 'Wound'}
+    'Summoner', 'Tantrum', 'Thane', 'Thaurdir', 'Thug', 'Time', 'Tools',
+    'Traitor', 'Treasure', 'Villain', 'Warden', 'Warrior', 'Weather', 'Wound'}
 LOCATION_SUBTYPE_TRAITS = {
     'Battleground', 'Besieged', 'Camp', 'Castle', 'Dark', 'Deck', 'Downs',
     'Dwelling', 'Fords', 'Fortification', 'Garrison', 'Gate', 'Hideout',
@@ -866,10 +866,11 @@ LOCATION_SUBTYPE_TRAITS = {
     'Pier', 'Polluted', 'Riverland', 'Siege', 'Snow', 'Stair', 'Wasteland'}
 LOCATION_TYPE_FIRST_TRAITS = {
     'Barrow', 'Blight', 'City', 'Desert', 'Forest', 'Mountain', 'Plains',
-    'Ruins', 'Underground', 'Underwater', 'Village'}
+    'Ruins', 'Underground', 'Underwater', 'Village', 'North', 'East', 'South',
+    'West', 'Northeast', 'Northwest', 'Southeast', 'Southwest'}
 LOCATION_TYPE_TRAITS = {
-    'Bridge', 'Cave', 'Coastland', 'Dungeon', 'Grotto', 'Hills', 'Lake',
-    'Level 0', 'Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5',
+    'Bridge', 'Cave', 'Coastland', 'Dungeon', 'Grotto', 'Hill', 'Hills',
+    'Lake', 'Level 0', 'Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5',
     'Level 6', 'Level 7', 'Ocean', 'River', 'Road', 'Ship', 'Stream', 'Swamp',
     'Town', 'Vale', 'Valley'}
 NOBLE_TRAITS = {'Noble'}
