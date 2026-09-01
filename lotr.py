@@ -857,7 +857,7 @@ DESCRIPTIVE_TRAITS = {
     'Ring-bearer', 'Ruffian', 'Sack', 'Sauron', 'Scheme', 'Scout', 'Scroll',
     'Search', 'Servant', 'Service', 'Shadow', 'Sharkey', 'Shirriff',
     'Sorcerer', 'Sorcery', 'Spy', 'Staff', 'Stalking', 'Steward', 'Summoned',
-    'Summoner', 'Tantrum', 'Thane', 'Thaurdir', 'Thug', 'Time', 'Tools',
+    'Summoner', 'Tantrum', 'Thain', 'Thaurdir', 'Thug', 'Time', 'Tools',
     'Traitor', 'Treasure', 'Villain', 'Warden', 'Warrior', 'Weather', 'Wound'}
 LOCATION_SUBTYPE_TRAITS = {
     'Battleground', 'Besieged', 'Camp', 'Castle', 'Dark', 'Deck', 'Downs',
