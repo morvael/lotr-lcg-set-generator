@@ -241,6 +241,7 @@ F_STAR = 'Star'
 F_BLUERING = 'BlueRing'
 F_GREENRING = 'GreenRing'
 F_REDRING = 'RedRing'
+F_SECONDDISCORDCATEGORY = 'SecondDiscordCategory'
 
 B_ENCOUNTER = 'Encounter'
 B_PLAYER = 'Player'
@@ -402,7 +403,8 @@ CARD_TYPES_NO_FLAGS = {F_STAR: {T_FULL_ART_LANDSCAPE, T_FULL_ART_PORTRAIT,
                        F_IGNORERULES: {T_FULL_ART_LANDSCAPE,
                                        T_FULL_ART_PORTRAIT, T_PRESENTATION},
                        F_NOARTIST: {T_PRESENTATION, T_RULES},
-                       F_NOCOPYRIGHT: {T_PRESENTATION, T_RULES}}
+                       F_NOCOPYRIGHT: {T_PRESENTATION, T_RULES},
+                       F_SECONDDISCORDCATEGORY: {T_PRESENTATION, T_RULES}}
 CARD_TYPES_NO_FLAGS_BACK = {
     F_STAR: {T_CAMPAIGN, T_FULL_ART_LANDSCAPE, T_FULL_ART_PORTRAIT,
              T_NIGHTMARE, T_PRESENTATION, T_RULES},
@@ -415,7 +417,8 @@ CARD_TYPES_NO_FLAGS_BACK = {
                    T_RULES},
     F_IGNORERULES: {T_FULL_ART_LANDSCAPE, T_FULL_ART_PORTRAIT, T_PRESENTATION},
     F_NOARTIST: {T_CAMPAIGN, T_NIGHTMARE, T_PRESENTATION, T_RULES},
-    F_NOCOPYRIGHT: {T_CAMPAIGN, T_NIGHTMARE, T_PRESENTATION, T_RULES}}
+    F_NOCOPYRIGHT: {T_CAMPAIGN, T_NIGHTMARE, T_PRESENTATION, T_RULES},
+    F_SECONDDISCORDCATEGORY: CARD_TYPES}
 CARD_SPHERES_NO_FLAGS = {F_BLUERING: {S_CAVE, S_NOSTAT, S_REGION},
                          F_GREENRING: {S_CAVE, S_NOSTAT, S_REGION},
                          F_REDRING: {S_CAVE, S_NOSTAT, S_REGION}}
@@ -468,7 +471,7 @@ CARD_TYPES_PAGES = {T_PRESENTATION, T_RULES}
 FLAGS = {F_ADDITIONALCOPIES, F_DEFAULTCOPYRIGHT, F_EXTRACTSECONDKEYWORD,
          F_FTCL, F_IGNOREAUTOMATICTAGS, F_IGNORENAME, F_IGNORERULES,
          F_NOARTIST, F_NOCOPYRIGHT, F_NOTRAITS, F_PROMO, F_STAR, F_BLUERING,
-         F_GREENRING, F_REDRING}
+         F_GREENRING, F_REDRING, F_SECONDDISCORDCATEGORY}
 RING_FLAGS = {F_BLUERING, F_GREENRING, F_REDRING}
 SPHERES = set()
 SPHERES_CAMPAIGN = {S_SETUP}
@@ -7648,6 +7651,9 @@ def save_data_for_bot(conf, sets):  # pylint: disable=R0912,R0914,R0915
                                           card_set)
         else:
             category = '{}{}'.format(discord_prefix, category)
+
+        if F_SECONDDISCORDCATEGORY in extract_flags(row.get(CARD_FLAGS, '')):
+            category = '{}{}'.format(category, ' [2]')
 
         category = _update_discord_category(category)
         row[CARD_DISCORD_CATEGORY] = category

@@ -634,6 +634,7 @@ List of available sphere values:
 - `NoTraits`
 - `Promo` (`Hero` only)
 - `Star`
+- `SecondDiscordCategory`
 - `BlueRing`
 - `GreenRing`
 - `RedRing`
